@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidya Janani - Portfolio</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo .dot {
+            color: #ffcc00;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        .nav-links a.active {
+            color: #ffcc00;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        h1, h2 {
+            color: #ffcc00;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .interest {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .interest:hover {
+            transform: scale(1.05);
+        }
+
+        .experience {
+            display: flex;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .experience-img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .project {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1f1f1f;
+        }
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        h1, h2 {
+            color: #ffcc00;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .interest {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .interest:hover {
+            transform: scale(1.05);
+        }
+
+        .experience {
+            display: flex;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .experience-img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .project {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1f1f1f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Let's Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <img src="profile.jpg" alt="Vidya Janani" class="profile-img">
+            <h1>I'm Vidya Janani.</h1>
+            <p>Aspiring software developer with strong Java skills and a passion for UI/UX design. Seeking an 
+                entry-level position to apply my technical expertise and innovative approach in developing
+                 intuitive, user-centric applications. Committed to contributing to innovative projects and 
+                 professional growth.</p>
+        </div>
+    </section>
+    
+    <section id="interests" class="section">
+        <div class="container">
+            <h2>My Interests</h2>
+            <img src="intresets.jpeg" alt="intresets" class="interesets-img">
+        </div>
+    </section>
+    
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>My Experience</h2>
+            <div class="experience">
+                <div class="experience-details">
+                    <p>Experience is more than just a list of past roles it's a journey of growth,
+                         learning, and achievement. In this section. Each role represents a stepping 
+                         stone in my career, demonstrating my commitment to excellence and my ability 
+                         to thrive in dynamic environments. Explore my experiences to gain insight into
+                          my skills, expertise, and the value I can bring to your team.</p>
+                      <img src="experience1.jpeg" alt="Experience" class="experience-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                          
+                <p>Explore a curated selection of my  projects, each showcasing my expertise
+                     and creativity in solving real-world problems. Dive into the details to 
+                     discover how I leveraged cutting-edge technologies and collaborated with 
+                     cross-functional teams to deliver impactful solutions that exceed expectations.</p>
+               <img src="project1.jpeg" alt="Project 1">
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Email: <a href="mailto:vidyajananiv@gmail.com">Mail me </a></p>
+            <p>Phone: +91-9345541310</p>
+            <div class="social-media">
+                <a href="https://github.com/VidyaJanani10">GitHub</a>
+                <a href="www.linkedin.com/in/vidyajananiv">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Designed by Vidya Janani</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
